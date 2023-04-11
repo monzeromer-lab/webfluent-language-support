@@ -1,0 +1,25 @@
+{
+  "name": "webfluent",
+  "displayName": "WebFluent",
+  "description": "WebFluent is compose-like way to descripe web pages with a way more human readable syntax",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.77.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "wf",
+      "aliases": ["WebFluent", "wf"],
+      "extensions": ["wf"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "wf",
+      "scopeName": "source.webfluent",
+      "path": "./syntaxes/wf.tmLanguage.json"
+    }]
+  }
+}
